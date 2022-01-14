@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="web3_bundle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+
+            <img src="img/Layer 10 (4).png" alt="" class="iconlogo">
+        </div>
+        <div>
+            <nav>
+                <ul class="columnnn">
+                    <li class="fonter"><a class="borderer" href="index.html">Home</a></li>
+                    <li class="fonter"><a class="borderer" href="News_page.html">News</a></li>
+                    <li class="fonter"><a class="borderer" href="marketplace.html">MarketPlace</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="wallet">
+            <img src="img/wallet.png" style="width: 50%; height: 50%;" alt="" class="wl">
+        </div>
+        <button type="button" class="btt" id="signout" onclick="signout()"><img src="img/log out.png"
+                style="width: 40px; height: 40px;" alt=""></button>
+
+
+
+    </header>
+    <div class="containerer">
+    <div class="fade-in-image">
+        <div class="fengmian">
+
+
+            <section>
+                <h1>
+                    <span>W</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>c</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>e</span>
+                    <span> </span>
+                    <span>T</span>
+                    <span>o</span>
+                    <span> </span>
+                    <span>S</span>
+                    <span>t</span>
+                    <Span>o</Span>
+                    <span>n</span>
+                    <span>v</span>
+                    <span>e</span>
+                    <span>r</span>
+                    <span>s</span>
+                    <span>e</span>
+
+                </h1>
+            </section>
+            <img src="img/Layer 10 (3).png" alt="" class="fengmianlogo">
+            <img src="img/god.png" alt="" class="god">
+            <img src="img/god2.png" alt="" class="god2">
+        </div>
+    </div>
+    <div class="creator">
+        <div class="hovereffect" style="width: 900px;">
+            <div class="image-wrapper">
+              <img src="img/Homepage2.png" class="image w-100" alt="normal" style="clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);"/>
+              <img src="img/Homepage.png" class="image-hover w-100" alt="hover"  style="clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);"/>
+            </div>
+            <div class="overlay"></div>
+          </div>
+    <div class="bxr" style="position: relative; right: 10%; top: 10%;">
+        <div class="fadetext" style="text-align: end;">
+        About creators
+    </div>
+    <div class="fadetext2" style="text-align: end;">
+        Welcome to my product heaven,this is my first time upload <br>my product into block chain channel. I hope you appreciate<br> this NFT. Enjoy!
+    </div>
+</div>
+
+
+    </div>
+    <div class="creator2" style="flex-flow:row-reverse">
+        <div class="hovereffect" style="width: 900px; margin-right: -160px;">
+            <div class="image-wrapper">
+              <img src="img/AC.png" class="image w-100" alt="normal" style="clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);"/>
+
+            </div>
+            <div class="overlay"></div>
+          </div>
+    <div class="bxr" style="position: relative; left: 10%; top: 10%; margin-left: -60px;" >
+        <div class="fadetext">
+        AC-Series
+    </div>
+    <div class="fadetext2">
+        An Impasto style NFTs with an natural background, <br>its minted only 50 edition.
+    </div>
+</div>
+    </div>
+    <div class="creator3">
+        <div class="hovereffect" style="width: 900px; margin-right: -160px;">
+            <div class="image-wrapper">
+              <img src="img/BA.png" class="image w-100" alt="normal" style="clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);"/>
+
+            </div>
+            <div class="overlay"></div>
+          </div>
+    <div class="bxr" style="position: relative; right: 10%; top: 10%;  margin-left: -60px;">
+        <div class="fadetext" style="text-align: end;">
+        BA-Series
+    </div>
+    <div class="fadetext2" style="text-align: end;">
+        Comic style NFTs is coming! its minted <br> only 100 edition. try to get it !
+    </div>
+</div>
+    </div>
+    <div class="creator4" style="flex-flow:row-reverse">
+        <div class="hovereffect" style="width: 900px; margin-right: -160px;">
+            <div class="image-wrapper">
+              <img src="img/FG.png" class="image w-100" alt="normal" style="clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);"/>
+            </div>
+            <div class="overlay"></div>
+          </div>
+    <div class="bxr" style="position: relative; left: 10%; top: 10%;  margin-left: -60px;">
+        <div class="fadetext">
+        FG-Series
+    </div>
+    <div class="fadetext2">
+         An open edition NFTs started in this January.<br> Try to get it before February!
+    </div>
+</div>
+    </div>
+    <div class="creator5">
+        <div class="hovereffect" style="width: 900px; margin-right: -160px;">
+            <div class="image-wrapper">
+              <img src="img/TF.png" class="image w-100" alt="normal" style="clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);"/>
+            </div>
+            <div class="overlay"></div>
+          </div>
+    <div class="bxr" style="position: relative; right: 10%; top: 10%;  margin-left: -60px;">
+        <div class="fadetext" style="text-align: end;">
+        TF-Series
+    </div>
+    <div class="fadetext2" style="text-align: end;">
+        An cooperate with an famous artist Buajijiki ! <br> It minted 10 edition. Rare NFTS.
+    </div>
+</div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="footop">
+            <div class="logo2"><img src="img/Layer 10 (4).png" alt=""></div>
+            <div class="joinus">
+                <div class="join"> Join Us</div>
+                <div class="email">Your Email</div>
+            </div>
+            <div class="sign"><a class="signin">Subscribe</a></div>
+            <div class="logobar"><img class="lgb" src="img/icon.png" alt=""></div>
+        </div>
+        <div class="footline"></div>
+        <div class="footbot">
+            <div class="res">
+                <div class="resor">Resources</div>
+                <div class="re">
+                    Help center
+                    <br>
+                    Partners
+                    <br>
+                    Blog
+                </div>
+            </div>
+            <div class="res">
+                <div class="resor">My Account</div>
+                <div class="re">
+                    My Profile
+                    <br>
+                    My Collection
+                    <br>
+                    My Favorites
+                    <br>
+                    My Account Settings
+                </div>
+            </div>
+            <div class="res">
+                <div class="resor">My Account</div>
+                <div class="re">
+                    All NFTs
+                    <br>
+                    Art
+                    <br>
+                    Music
+                    <br>
+                    Vitural Words
+                    <br>
+                    Trading Cards
+                </div>
+            </div>
+        </div>
+        
+
+
+    </footer>
+</div>
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
